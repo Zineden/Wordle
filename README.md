@@ -1,6 +1,6 @@
 # Wordle Clone Application
 
-##Video demonstration
+## Video demonstration
 
 https://github.com/Zineden/Wordle/assets/83392181/05df6259-55fe-484e-b488-a3260226d7a6
 
