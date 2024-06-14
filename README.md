@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Wordle Clone Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Video demonstration
 
-## Available Scripts
+https://github.com/Zineden/Wordle/assets/83392181/05df6259-55fe-484e-b488-a3260226d7a6
 
-In the project directory, you can run:
+## Introduction
+I created this Wordle clone application using React to practice and improve my React skills. As a huge fan of the Wordle game, I was inspired to replicate it due to my frequent play and enjoyment. Currently, I am working on another application inspired by Wordle but tailored to another game I enjoy.
 
-### `npm start`
+## Features
+- **Word Guessing Game:** Similar to the original Wordle, players have a limited number of attempts to guess the correct word.
+- **Responsive Design:** The application is designed to work seamlessly on various screen sizes, ensuring a smooth experience on both desktop and mobile devices.
+- **Interactive UI:** Engaging and interactive user interface that provides feedback on each guess.
+- **Word Validation:** Each guess is validated to ensure it's a valid word.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- **React:** JavaScript library for building user interfaces.
+- **CSS:** Styling the components for a clean and responsive design.
+- **JavaScript:** Logic for game mechanics and interactivity.
+- **JSON Server:** Simple backend for storing and managing word data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
+To run this application locally, follow these steps:
 
-### `npm test`
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Zineden/Wordle.git
+    ```
+2. **Navigate to the project directory:**
+    ```bash
+    cd wordle-clone
+    ```
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4. **Set up the JSON database:**
+    ```bash
+    npx json-server --watch data/db.json --port 8000
+    ```
+   This command starts a local server and watches the `data/db.json` file for changes. The server will run at `http://localhost:8000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Start the development server:**
+    ```bash
+    npm start
+    ```
+   The application will open in your default browser at `http://localhost:3000`.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Play
+1. The player has six attempts to guess a hidden word.
+2. Each guess must be a valid five-letter word.
+3. After each guess, the color of the tiles will change to show how close your guess was to the word:
+   - **Green:** The letter is in the correct position.
+   - **Yellow:** The letter is in the word but in the wrong position.
+   - **Grey:** The letter is not in the word.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Plans
+I am currently working on an application inspired by Wordle but specific to another game I enjoy. Stay tuned for updates and new features!
